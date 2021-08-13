@@ -8,7 +8,7 @@ class GameStats extends Component {
                 <h3>Rock, Paper, Scissors</h3>
                 <h4>Games won: {this.props.gamesWon}</h4>
                 <h4>Games played: {this.props.gamesPlayed}</h4>
-                <button className="btn btn-success">Play!</button>
+                {/* <button className="btn btn-success">Play!</button> */}
             </div>
         )
     }
