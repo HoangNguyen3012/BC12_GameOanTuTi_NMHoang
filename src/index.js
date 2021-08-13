@@ -10,9 +10,17 @@ import 'popper.js/dist/umd/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Custome imports for BS4 end
+
+// Import Redux store
+import { Provider } from 'react-redux';
+import store from './assets/store/index.js';
+// Import Redux store ends
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

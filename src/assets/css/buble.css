@@ -2,20 +2,58 @@
 	position: relative;
 	background: #45D994;
 	border-radius: .4em;
-	
+	margin: auto;
+	width: 30%;
+	max-height: 200px;
+	max-width: 200px;
 }
 
 .speech-bubble:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+	left: 60%;
 	width: 0;
 	height: 0;
-	border: 35px solid transparent;
+	border: 25px solid transparent;
 	border-top-color: #45D994;
 	border-bottom: 0;
 	border-left: 0;
 	margin-left: -17.5px;
-	margin-bottom: -35px;
+	margin-bottom: -25px;
+}
+
+/** Custome */
+.game-container {
+	background-image: url(../img/bgGame.png);
+	background-size: cover;
+	background-position: top;
+	/* background: black; */
+	height: 100vh;
+	font-family: 'gameFont';
+}
+
+@font-face {
+	font-family: 'gameFont';
+	src: url(../font/Pony.ttf);
+}
+
+.game-container h3 {
+	padding: 30px 0;
+	color: rgb(255, 145, 0);
+}
+
+.game-container h4 {
+	padding-bottom: 20px;
+	color: rgb(81, 255, 0);
+}
+
+.btnChoose {
+	border: 5px solid transparent;
+	padding: 15px 0px;
+	max-height: 40%;
+}
+
+.btnChoose:hover {
+	border-color: rgb(255, 145, 0);
 }
