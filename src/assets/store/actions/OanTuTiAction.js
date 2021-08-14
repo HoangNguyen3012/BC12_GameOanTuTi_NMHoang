@@ -1,11 +1,10 @@
-// import * as 
+import * as OanTuTiConst from '../constants/OanTuTiConstant';
 
 export const actGamerChoose = choice => ({
-    type:'gamerChoice',
+    type: OanTuTiConst.gamerChoice,
     payload: choice,
 })
 
-export const actComputerChoose = choice => ({
-    type:'computerChoice',
-    payload: choice,
+export const actComputerChoose = () => ({
+    type:OanTuTiConst.computerChoice,
 })
